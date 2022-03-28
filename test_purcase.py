@@ -3,9 +3,9 @@ import pytest
 
 @pytest.fixture()
 def setUp():
-    print("setup started")
+    print("user loged in")
     yield
-    print("exited")
+    print("loged out")
 def test_AddItemtoCart(setUp):
     print("Added successfully")
 
