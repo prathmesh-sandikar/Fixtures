@@ -1,6 +1,4 @@
 import pytest
-
-
 @pytest.fixture()
 def setUp():
     print("open amazon app")
@@ -8,9 +6,9 @@ def setUp():
     yield
     print("loged out")
     print("closed amazon")
-def test_AddItemtoCart(setUp):
-    print("Added successfully")
 
 
-def test_RemoveItemFromCart(setUp):
-    print("Removed successfully")
+
+
+def test_checkout(setUp):
+    print("payment successfully")
